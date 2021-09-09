@@ -14,6 +14,8 @@ print(str.replace(".", '\n'))
 print(str.join("AB"))
 print(str.split("."))
 print(str.strip())
+name = 'Oldrik'
+print(f'It\'s my old friend - {name}')
 
 print(str.isalnum())
 print(str.isalpha())
