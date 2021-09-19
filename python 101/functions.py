@@ -168,3 +168,12 @@ printBordersForMin(min)(10, 3)
 # ---TOP---
 # 3
 # ---BOTTOM---
+
+# Recursion
+
+def findGreatestCommonDivisor(x, y):
+    if (y == 0):
+        return x
+    return findGreatestCommonDivisor(y, x % y)
+
+print(findGreatestCommonDivisor(100,15)) # 5
