@@ -1,12 +1,3 @@
-mom, dad, daughter, dog = {}, {}, {}, {}
-
-dog = {
-  'Name': 'Maylo',
-  'Age': 2,
-  'Owners': [mom, dad, daughter],
-  'isHungry' : False
-}
-
 mom = {
   'name': 'Alice',
   'age': 35,
