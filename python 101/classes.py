@@ -12,6 +12,9 @@ class Animal():
     self.__name = name
     self.__isFlying = isFlying
   
+  def __str__(self):
+      return f'{self.name} is an Animal'
+      
   @property
   def name(self):
     return self.__name
@@ -20,7 +23,6 @@ class Animal():
   def name(self, name):
     if (type(name) != str): return
     self.__name = name
-
 
 class Dog(Animal):
   def __init__(self, name, isFlying, breed):
