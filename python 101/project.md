@@ -5,9 +5,8 @@ There is common information about the expected program. You are free for impleme
 All that we needs:
   * A Hero
   * An Enemies
-  * A Map 
-  * A Quests
-  * A Treasures
+  * A Map (additional)
+  * A Quests (additional)
 
 
 # Hero
@@ -80,19 +79,49 @@ When it is used it drops automatically.
 ## Weapon
 Hero and some monsters may use a weapon.  
 The weapon has the required level for using or dressing it.  
+The effect may be used to power Hero's attack. Choose by yourself how it will be implemented. Or you may skip it.  
 It not may be upgraded.  
 For more fun, you may set a random value in the given range.  
 #### Weapon has:
   * Name `: str`
   * Value `: str`
+  * Effect: `: str`
   * RequiredLevel `: int`
 
 ## Armor
 Only Hero may use armor.  
 The Armor has the required level for using or dressing it.  
+The effect may be used to reduce damage if monster have a specific type. Choose by yourself how it will be implemented. Or you may skip it.  
 It not may be upgraded.  
 For more fun, you may set a random value in the given range.  
 #### Armor has:
   * Name `: str`
   * Value `: str`
+  * Effect: `:str`
   * RequiredLevel `: int`
+
+## Enemy
+It is a common description of the Enemy. In that way, the enemy may have different characteristics.  
+The enemy may be founded by a hero anywhere in game world.   
+Enemy creates based on Hero level +\- 4.  
+To have more fun, some enemies may have limitations of level.  
+The enemy gets a random weapon based on his level or doesn't have it  
+Type and weakness may be used for additional damage.  
+When Hero meets an Enemy he may explore all enemy characteristics if his level is equal to or higher than enemy level. If not, the hero may explore a name and level of the enemy.  
+The hero may do three actions - explore, run or fight.  
+If Hero defeats the enemy his collects loot. Loot gets random and may be empty.  
+If Hero defeats the enemy his gains experience.   
+If the Enemy defeats the Hero, Hero loses part of the earned experience on his level, and life decreases to 20%. Enemy removes from game.  
+
+#### Enemy characteristics:
+  * Name `: str`
+  * Description `: str`
+  * Level `: int`
+  * Strength `: int`
+  * Weakness: `: str`
+  * Type `: str`
+  * Weapon `: Weapon`
+  
+#### Enemy actions:
+  * attack
+  * run (additional)
