@@ -32,7 +32,8 @@ The hero may use Items.
   * Equipment ```: {
       armor : Armor,
       weapon: Weapon
-  }```
+  }```  
+  * Quests: `: Quest[]` (additional)  
 #### Hero's basic actions:
   * explore
       > This action for finding more about an object
@@ -47,6 +48,8 @@ The hero may use Items.
       > Hero may change armor from the bag
   * change a Weapon
       > Hero may change weapon from the bag
+  * Show quests (additional)
+  * Choose quest (additional)
 
 ## Ability
 Ability is a player or monster special action.  
@@ -118,10 +121,83 @@ If the Enemy defeats the Hero, Hero loses part of the earned experience on his l
   * Description `: str`
   * Level `: int`
   * Strength `: int`
-  * Weakness: `: str`
+  * Weakness `: str`
   * Type `: str`
   * Weapon `: Weapon`
   
 #### Enemy actions:
   * attack
   * run (additional)
+
+
+# Map
+It's a map of the game world or a local dungeon.    
+Map manage hero's movements.
+Hero may see all info from map   
+
+#### Map characteristics:
+  * Locations `: Location[]`
+  * PlayerPosition  `: Location`
+
+#### Map actions:
+  * Move Player
+  * Run Location
+  * Show map
+
+## Location
+Specific place where the hero may find monsters, items, and other objects.     
+The hero may visits explore, visit and leave a Location.  
+If the hero explores a location - show a description of the Location.  
+On hero, visit runs the Run Location script.  
+Script May contain quests events, self events, battles, or even little games. If the hero successfully completes the location he gets a reward and experience.   
+You must choose how events will be played. 
+For more fun, some locations may contain random actions or may be infinite times completed.
+Location may have self Map.   
+The location contains neighbors which may be visited from it.  
+
+#### Location characterictics:
+  * Name `: str`
+  * Description: `: str`
+  * selfMap `: Map || str`
+  * neighbours `: Location[]`
+  * selfEvents: `: Event[]`
+  * questEvents: `: Event[]`
+  * isCompleted `: bool`
+
+#### Location actions:
+  * Run Location
+  * Go to Neighbour
+  * Give a reward
+
+
+# Quest
+Quest it's a story that is separated by specific events.  
+The hero may find a quest in the Locat ion or get it after level up.   
+The hero may refuse to take a quest.   
+The quest started when the hero take it.  
+Quest plays on Event to an Event, when events are over, quest finish and hero take a reward.   
+
+#### Quest characterictics:
+  * Name `: str`
+  * Description `: str`
+  * Events: `: Event[]`
+  * CurrentEvent `: Event`
+  * Reward: `: Item[] || Ability`
+
+#### Quest actions:
+  * Add Event
+  * Remove Event
+  * Give a reward
+  * Show current task
+
+## Event
+It's a point where user may know a story and interact with it.   
+You may give some rewards to the hero, if you want, when he's completed event.   
+
+#### Event characterictics:
+  * Goal: `: str`
+  * Place: `: Location.name`
+
+#### Event actions:
+  * Set Event
+  * Remove Event
