@@ -201,3 +201,22 @@ You may give some rewards to the hero, if you want, when he's completed event.
 #### Event actions:
   * Set Event
   * Remove Event
+
+
+# Technical Requirements
+  * [ ] All project must be done in a separate repo   
+  * [ ] There is must be the main branch with current working version and additional branches from main with implemented program part     
+    For example, branch Hero contains all logic for the hero and may be merged with main when it will work. After merge new branch comes from the main.
+  * To merge to the main use Pull Request that contains:
+    * What you do
+    * Duration for this task
+    * Date of completed
+  * [ ] All items, abilities, quests, and other game data must be placed in separate files (py, txt, or json)
+  * [ ] Player's progress save in separate file
+  * [ ] Player may continue, load, or create a new game.
+  * [ ] Player's save must be named by the player when the game is creating.
+  * [ ] Create a README.md and place it in root of your repo. It must contains:
+    * Game name
+    * Game description
+    * Main actions 
+    * Stucture of files, and how other developer may add new game data
