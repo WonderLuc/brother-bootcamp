@@ -11,6 +11,7 @@ All that we needs:
 
 # Hero
 ![visored-helm](https://user-images.githubusercontent.com/52273527/137013564-03077421-7ae3-4f04-9429-d305d9d75f51.png)
+<img src="https://user-images.githubusercontent.com/52273527/137013564-03077421-7ae3-4f04-9429-d305d9d75f51.png" width="80" />
 
 Hero is a player role.  
 Before starting a new game player inputs Hero's name and Race.  
