@@ -10,6 +10,8 @@ All that we needs:
 
 
 # Hero
+![visored-helm](https://user-images.githubusercontent.com/52273527/137013564-03077421-7ae3-4f04-9429-d305d9d75f51.png)
+
 Hero is a player role.  
 Before starting a new game player inputs Hero's name and Race.  
 We ask the player which action our Hero must do. The hero may do actions while he has actions points.  
@@ -103,7 +105,9 @@ For more fun, you may set a random value in the given range.
   * Effect: `:str`
   * RequiredLevel `: int`
 
-## Enemy
+# Enemy
+![goblin-head](https://user-images.githubusercontent.com/52273527/137013621-f99b58dd-6ac8-4212-8339-a413f0d6afca.png)
+
 It is a common description of the Enemy. In that way, the enemy may have different characteristics.  
 The enemy may be founded by a hero anywhere in game world.   
 Enemy creates based on Hero level +\- 4.  
@@ -131,6 +135,8 @@ If the Enemy defeats the Hero, Hero loses part of the earned experience on his l
 
 
 # Map
+![treasure-map](https://user-images.githubusercontent.com/52273527/137013644-3d7bdf73-d797-4361-b520-ef31b6ce9de2.png)
+
 It's a map of the game world or a local dungeon.    
 Map manage hero's movements.
 Hero may see all info from map   
@@ -171,6 +177,8 @@ The location contains neighbors which may be visited from it.
 
 
 # Quest
+![conqueror](https://user-images.githubusercontent.com/52273527/137013674-a3f2c418-3937-4337-9aad-043a0f9332dc.png)
+
 Quest it's a story that is separated by specific events.  
 The hero may find a quest in the Locat ion or get it after level up.   
 The hero may refuse to take a quest.   
@@ -204,6 +212,8 @@ You may give some rewards to the hero, if you want, when he's completed event.
 
 
 # Technical Requirements
+![highlighter](https://user-images.githubusercontent.com/52273527/137013808-50c6cef1-2d5a-4ee3-98c8-417393ced76b.png)
+
   * [ ] All project must be done in a separate repo   
   * [ ] There is must be the main branch with current working version and additional branches from main with implemented program part     
     For example, branch Hero contains all logic for the hero and may be merged with main when it will work. After merge new branch comes from the main.
