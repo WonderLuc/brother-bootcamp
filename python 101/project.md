@@ -235,3 +235,7 @@ You may give some rewards to the hero, if you want, when he's completed event.
   * [JSON for Python](https://realpython.com/python-json/)
   * [Linked List and Graph](https://realpython.com/linked-lists-python/)
   * [Markdown for .md](https://www.markdownguide.org/basic-syntax/) 
+
+img{
+ width: 80px;
+}
