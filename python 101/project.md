@@ -220,3 +220,8 @@ You may give some rewards to the hero, if you want, when he's completed event.
     * Game description
     * Main actions 
     * Stucture of files, and how other developer may add new game data
+
+# Additional info
+  * [JSON for Python](https://realpython.com/python-json/)
+  * [Linked List and Graph](https://realpython.com/linked-lists-python/)
+  * [Markdown for .md](https://www.markdownguide.org/basic-syntax/) 
