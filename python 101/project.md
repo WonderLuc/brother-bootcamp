@@ -225,6 +225,7 @@ You may give some rewards to the hero, if you want, when he's completed event.
   * [ ] Player's progress save in separate file
   * [ ] Player may continue, load, or create a new game.
   * [ ] Player's save must be named by the player when the game is creating.
+  * [ ] All components of game like Hero, Enemies, Items, and etc. must be placed in separate files.
   * [ ] Create a README.md and place it in root of your repo. It must contains:
     * Game name
     * Game description
